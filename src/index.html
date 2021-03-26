@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>Studion</title>
+      <meta charset="UTF-8"/> 
+      <meta name="viewport" content="width=device"/> 
+      <link rel="stylesheet" href="style.css"/>
+      <title>Studion</title>
     </head>
+
     <body>
-        <nav>
-          <h1>Studi<span>on</span><Span>Eventos</Span></h1>   
-            <ul>
+        <nav class="navbar">
+        <h1 class="logo-studion">
+          Studi<span class="copy--primary">on</span>
+          <Span class="logo-studion__subtitle">Eventos</Span>
+        </h1>   
+            <ul class="navbar__links">
                 <li>
                     <a href="#empresa">
                         Empresa
@@ -36,12 +43,19 @@
             </ul>
         </nav>
         <header>
+        
             <div id="slider">
                <div class="slide">
-                   <h6><Span>ptoximo e evento</Span>- dia 25 de janeiro as 19h</h6>
-                   <h2><span>creative </span>minds</h2>
-                   <button>saiba  mais</button>
-
+                    <img 
+                    class="slide__background-image" 
+                    src="./images/banner.jpg" 
+                    alt="Studion Banner"
+                    />
+                <div class="slide__copy">
+                    <h6><span class="copy--primary">proximo e evento</Span>- dia 25 de janeiro as 19h</h6>
+                    <h2><span class="copy--primary">creative </span>minds</h2>
+                    <button class="btn btn--slide">saiba  mais</button>
+                </div>
                </div>
 
             </div>
@@ -98,5 +112,5 @@
                <p><small> studi<span>on</span>todos os direitos reservados</small></p>
             </form>
         </footer>
-        </body>
+    </body>
         </html>
