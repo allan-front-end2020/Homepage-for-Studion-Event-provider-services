@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>Studion</title>
+      <meta charset="UTF-8"/> 
+      <meta name="viewport" content="width=device"/> 
+      <link rel="stylesheet" href="style.css"/>
+      <title>Studion</title>
     </head>
+
     <body>
-        <nav>
-          <h1>Studi<span>on</span><Span>Eventos</Span></h1>   
-            <ul>
+        <nav class="navbar">
+         <div class="container navbar__container">
+            <h1 class="logo-studion">
+             Studi<span class="copy--primary">on</span>
+             <Span class="logo-studion__subtitle">Eventos</Span>
+            </h1>   
+            <ul class="navbar__links">
                 <li>
                     <a href="#empresa">
                         Empresa
@@ -32,54 +40,65 @@
                         contatos
                     </a>
                 </li>
-            
             </ul>
+         </div>  
         </nav>
+
         <header>
             <div id="slider">
                <div class="slide">
-                   <h6><Span>ptoximo e evento</Span>- dia 25 de janeiro as 19h</h6>
-                   <h2><span>creative </span>minds</h2>
-                   <button>saiba  mais</button>
-
-               </div>
-
+                    <img 
+                    class="slide__background-image" 
+                    src="./images/banner.jpg" 
+                    alt="Studion Banner"
+                    />
+                    <div class="slide__copy">
+                    <h6><span class="copy--primary">proximo e evento</Span>- dia 25 de janeiro as 19h</h6>
+                    <h2><span class="copy--primary">creative </span>minds</h2>
+                    <button class="btn btn--slide">saiba  mais</button>
+                
+                   </div>
+                </div>
             </div>
-
-
-
-            
-
-
-
         </header>
         <main>
-            <section>
-                <ul>
-                    <li><h3> + de 500</h3> eventos realizados</li>
+            <section id="counter" class="counter">
+                <ul class="container counter__container">
+                    <li><h3>  + de 500</h3> eventos realizados</li>
                     <li><h3> + de 1.000.000</h3>ingressos vendidos</li>
                     <li><h3>+ de 500</h3> empresas atendidas</li>
                 </ul>
             </section>
-            <section>
-               <div>
-                    <img src="./images/institutional.jpg" alt="">
-                    <h6>fazemos seu evenyo acontecer</h6>
-                    <h4>Lorem ipsum a, rtio ipsa sed incidunt commodi?</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel libero quae repellendus at tenetur! Architecto saepe maiores, dignissimos, accusantium quaerat dicta laudantium numquam quam minus dolore sapiente modi tempora est?
-                    </p>
-                    <button>saiba mais</button>
+            <section class="institutional">
+               <div class="container institutional__container">
+
+                    <img 
+                    class="institutional__image"
+                    src="./images/institutional.jpg" 
+                    alt="Studion intitutional"
+                    />
+                    <div class="institutional__copy">
+                        <h6>fazemos seu evenyo acontecer</h6>
+                        <h4>Lorem ipsum a, rtio ipsa sed incidunt commodi?</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Vel libero quae repellendus at tenetur! Architecto saepe maiores,
+                            laudantium numquam quam minus dolore sapiente modi tempora est?
+                        </p>
+                        <button class=" btn btn - institutional">saiba mais</button>
+                    </div>  
               </div>  
             </section>
-            <section>
-                <div>
-                    <h6>
-                        vc informa a temeatica e nos  planejamos um  evento com tecnologia e
-                    </h6>
-                    <h2><span>muito + </span>diversao</h2>
-                    <button>fazer cotacao</button>
-                    
+            <section class="quote">
+                <img src="./images/parallax.jpg " alt="parallax">
+                <div class="container quote__container">
+                    <div class="container quote__container">
+                        <h6>
+                            vc informa a temeatica e nos  planejamos um  evento com tecnologia e
+                        </h6>
+                        <h2><span copy-primary>muito + </span>diversao</h2>
+                        <button btn btn-quote>fazer cotacao</button>
+                   </div>
                 </div>
             </section> 
         </main>
@@ -98,5 +117,5 @@
                <p><small> studi<span>on</span>todos os direitos reservados</small></p>
             </form>
         </footer>
-        </body>
+    </body>
         </html>
